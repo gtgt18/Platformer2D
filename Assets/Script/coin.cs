@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class coin : MonoBehaviour
-
 {
-    void OnTriggerEnter2D(Collider2D other)
+
+    private int coinCount = 0;
+    
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Перевіряємо, чи доторкнувся гравець
         if (other.CompareTag("Player"))
         {
-            // Тут можна додати лічильник або звук
-
-            Destroy(gameObject); // Знищити монетку
+            Destroy(gameObject);
         }
     }
+    
 }
+
