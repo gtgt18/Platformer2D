@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactible
+  - Coin
   layers:
   - Default
   - TransparentFX
